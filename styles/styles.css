@@ -14,11 +14,38 @@
 
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    margin-top: 5px;
+}
+
+.navbar h3 {
+    font-size: 28px;
+    font-weight: 800;
+
+}
+
+.navbar button {
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    padding: 17px 24px 17px 24px;
+    box-sizing: border-box;
+    border: 1px solid rgb(13, 19, 33);
+    border-radius: 8px;
+    opacity: 0.8;
+    border: none;
+    cursor: pointer;
+}
+
+
 .banner-main {
     background-image: url(../images/Hero-bg.png);
     margin-bottom: 74px;
     height: 652px;
-    border: dashed 1pt;
+    /* border: dashed 1pt; */
 
 }
 
@@ -288,13 +315,15 @@
 .handshake {
     margin-top: 40px;
     margin-bottom: 70px;
-    background-image: url(../images/handshake.jpg);
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+        url(../images/handshake.jpg);
     height: 400px;
     background-size: cover;
     background-position: center;
     border-radius: 16px;
 
-    background: rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),url(Email);
+
+
 
 }
 
@@ -314,11 +343,71 @@
 
 }
 
+.handshake .handshake-text p {
+    margin-bottom: 30px;
+}
+
 .handshake-input {
-    padding: 19px 200px 19px 10px;
-    text-align: center;
+
+    position: static;
+    width: 548px;
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 19px 20px 19px 20px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
+    border: none;
+
+
     box-sizing: border-box;
     border: 1px solid rgba(13, 19, 33, 0.15);
     border-radius: 8px;
-    margin-right: 20px;
+    background: rgb(255, 255, 255);
+}
+
+.handshake-input-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.handshake-btn {
+    border-radius: 8px;
+
+    background: rgb(255, 255, 255);
+    align-items: center;
+    padding: 17px 20px 17px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* /* Footer */
+
+.footer {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.03);
+    padding: 32px 150px 32px 150px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fb {
+    display: flex;
+    gap: 10px;
 }
