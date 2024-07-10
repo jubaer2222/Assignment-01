@@ -38,6 +38,7 @@
     opacity: 0.8;
     border: none;
     cursor: pointer;
+    border: 1px solid;
 }
 
 
@@ -237,6 +238,7 @@
     border: 1px solid rgba(13, 19, 33, 0.2);
     border-radius: 16px;
     padding: 32px;
+    margin-bottom: 48px;
 
 }
 
